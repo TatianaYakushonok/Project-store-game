@@ -1,3 +1,14 @@
 .footer
+    padding: 8rem 0
     background: $color-blue-dark
     grid-column: full-start / full-end
+    display: grid
+    row-gap: 8rem
+    text-align: center
+    border-top: .3rem solid $color-gray-light
+    &__link
+        transition: all .3s ease
+        &:hover
+            transform: translateY(.4rem)
+    &__logo
+        justify-self: center

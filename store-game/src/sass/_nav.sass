@@ -1,0 +1,19 @@
+.nav
+    &__list
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr))
+        align-items: center
+        grid-gap: 2.5rem 1rem
+    &__link
+        &:link,
+        &:visited
+            display: inline-block
+            font-weight: 300
+            text-transform: uppercase
+            color: inherit
+            transition: all .3s ease
+        &:hover
+            color: $color-green-dark
+            transform: translateY(.4rem)
+        &:active
+            color: $color-green-light
