@@ -1,3 +1,32 @@
 .header
-    background: $color-blue-dark
+    background: $color-blue-dark url('../img/header-bg.jpg') center / cover no-repeat
     grid-column: full-start / col-end 6
+    padding: 5rem
+    display: grid
+    grid-template-rows: 1fr min-content minmax(10rem, min-content) 1fr
+    &__logo-link
+        justify-self: center
+    &__btn
+        align-self: start
+        justify-self: start
+    &__line-text
+        margin-bottom: 1.3rem
+        display: grid
+        grid-template-columns: 1fr max-content 1fr
+        grid-column-gap: 2rem
+        align-items: center
+        font-weight: 700
+        &::before,
+        &::after
+            content: ''
+            height: .1rem
+            display: block
+            background: $color-gray-dark
+    &-img
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        justify-items: center
+        column-gap: 2rem
+    &-img img
+        height: 2.5rem
+        filter: brightness(70%)
