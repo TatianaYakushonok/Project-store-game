@@ -4,6 +4,8 @@
     padding: 5rem
     display: grid
     grid-template-rows: 1fr min-content minmax(10rem, min-content) 1fr
+    @include respond(tab-port)
+        grid-column: full-start / full-end
     &__logo-link
         justify-self: center
     &__btn
