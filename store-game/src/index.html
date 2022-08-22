@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +10,32 @@
 </head>
 <body>
     <div class="container">
+        <div class="overlay"></div>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#cards" class="menu__link">Аренда консолей</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#team" class="menu__link">Командные соревнования</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#cards" class="menu__link">Аренда сервера</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#team" class="menu__link">Сообщество</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#header" class="menu__link">Работай и играй</a>
+                </li>
+            </ul>
+        </nav>
         <div class="sidebar">
             <button class="hamburger">
                 <span></span>
             </button>
         </div>
-        <div class="header">
+        <div id="header" class="header">
             <a href="#!" class="header__logo-link logo__link">
                 <img src="./icons/logo.svg" alt="logo" class="logo__img">
             </a>
@@ -102,13 +122,13 @@
             <img src="./img/bunner-img-1.jpg" alt="img 1" class="bunner-img__img-1">
             <img src="./img/bunner-img-2.jpg" alt="img 2" class="bunner-img__img-2">
         </div>
-        <div class="bunner-text">
+        <div id="team" class="bunner-text">
             <h4 class="title-4">Веди команду к победе</h4>
             <h2 class="title-2 mb-sm">Лучшее место для онлайн соревнований</h2>
             <p class="bunner-text__text">Как уже неоднократно упомянуто, базовые сценарии поведения пользователей освещают чрезвычайно интересные особенности картины.</p>
             <button class="btn">Создать команду</button>
         </div>
-        <div class="cards">
+        <div id="cards" class="cards">
             <div class="card">
                 <img src="./img/card-img-1.jpg" alt="img 1" class="card__img">
                 <h5 class="card__title">PC</h5>
@@ -329,25 +349,25 @@
             </div>
         </div>
         <div class="footer">
-            <a href="#!" class="footer__link logo__link">
+            <a href="#header" class="footer__link logo__link">
                 <img src="./icons/logo.svg" alt="logo" class="footer__logo logo__img">
             </a>
             <nav class="footer__nav nav">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#!" class="nav__link">Аренда консолей</a>
+                        <a href="#cards" class="nav__link">Аренда консолей</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#!" class="nav__link">Командные соревнования</a>
+                        <a href="#team" class="nav__link">Командные соревнования</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#!" class="nav__link">Аренда сервера</a>
+                        <a href="#cards" class="nav__link">Аренда сервера</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#!" class="nav__link">Сообщество</a>
+                        <a href="#team" class="nav__link">Сообщество</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#!" class="nav__link">Работай и играй</a>
+                        <a href="#header" class="nav__link">Работай и играй</a>
                     </li>
                 </ul>
             </nav>
