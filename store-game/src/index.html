@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./icons/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./icons/favicon/safari-pinned-tab.svg" color="#aaaaaa">
+    <link rel="shortcut icon" href="./icons/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#f5f5f5">
+    <meta name="msapplication-config" content="./icons/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#f5f5f5">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Game store</title>
@@ -35,7 +44,7 @@
                 <span></span>
             </button>
         </div>
-        <div id="header" class="header">
+        <header id="header" class="header">
             <a href="#!" class="header__logo-link logo__link">
                 <img src="./icons/logo.svg" alt="logo" class="logo__img">
             </a>
@@ -49,7 +58,7 @@
                 <img src="./icons/header-ico-3.png" alt="png3">
                 <img src="./icons/header-ico-4.png" alt="png4">
             </div>
-        </div>
+        </header>
         <div class="gamers">
             <h3 class="gamers__tetle title-3 title-3_up title-3_green-light">Top 3 players</h3>
             <div class="gamers__box">
@@ -74,7 +83,7 @@
                 </div>
             </div>
         </div>
-        <div class="features">
+        <section class="features">
             <div class="feature">
                 <svg class="feature__icon">
                     <use xlink:href="./icons/symbol-defs.svg#icon-card-1"></use>
@@ -117,20 +126,27 @@
                 <h3 class="title-3">Удобная система оплаты</h3>
                 <p class="feature__text">Как уже неоднократно упомянуто, базовые сценарии поведения пользователей освещают черезвычайно интересные особенности картины.</p>
             </div>
-        </div>
-        <div class="bunner-img">
-            <img src="./img/bunner-img-1.jpg" alt="img 1" class="bunner-img__img-1">
-            <img src="./img/bunner-img-2.jpg" alt="img 2" class="bunner-img__img-2">
-        </div>
-        <div id="team" class="bunner-text">
+        </section>
+        <section class="bunner-img">
+            <img src="./img/bunner-img-1.png" alt="img 1" class="bunner-img__img-1">
+            <img src="./img/bunner-img-2.png" alt="img 2" class="bunner-img__img-2">
+        </section>
+        <section id="team" class="bunner-text">
             <h4 class="title-4">Веди команду к победе</h4>
             <h2 class="title-2 mb-sm">Лучшее место для онлайн соревнований</h2>
             <p class="bunner-text__text">Как уже неоднократно упомянуто, базовые сценарии поведения пользователей освещают чрезвычайно интересные особенности картины.</p>
             <button class="btn">Создать команду</button>
-        </div>
-        <div id="cards" class="cards">
+        </section>
+        <section id="cards" class="cards">
             <div class="card">
-                <img src="./img/card-img-1.jpg" alt="img 1" class="card__img">
+                <img src="./img/card-img-1_2x.jpg" 
+                    srcset="./img/card-img-1.jpg 330w, 
+                            ./img/card-img-1_2x.jpg 660w"
+                    sizes="(max-width: 1170px) 660px,
+                           (max-width: 830px) 660px,
+                           (max-width: 460px) 330px" 
+                    alt="img 1" 
+                    class="card__img">
                 <h5 class="card__title">PC</h5>
                 <div class="content card__location">
                     <svg class="card__svg">
@@ -159,7 +175,14 @@
                 <button class="btn card__btn">Выбрать платформу</button>
             </div>
             <div class="card">
-                <img src="./img/card-img-2.jpg" alt="img 1" class="card__img">
+                <img src="./img/card-img-2_2x.jpg"
+                     srcset="./img/card-img-2.jpg 330w, 
+                             ./img/card-img-2_2x.jpg 660w"
+                    sizes="(max-width: 1170px) 660px,
+                            (max-width: 830px) 660px,
+                            (max-width: 460px) 330px" 
+                     alt="img 1" 
+                     class="card__img">
                 <h5 class="card__title">Play Station</h5>
                 <div class="content card__location">
                     <svg class="card__svg">
@@ -188,7 +211,14 @@
                 <button class="btn card__btn">Выбрать платформу</button>
             </div>
             <div class="card">
-                <img src="./img/card-img-3.jpg" alt="img 1" class="card__img">
+                <img src="./img/card-img-3_2x.jpg"
+                    srcset="./img/card-img-3.jpg 330w, 
+                            ./img/card-img-3_2x.jpg 660w"
+                    sizes="(max-width: 1170px) 660px,
+                            (max-width: 830px) 660px,
+                            (max-width: 460px) 330px" 
+                    alt="img 1" 
+                    class="card__img">
                 <h5 class="card__title">X-BOX</h5>
                 <div class="content card__location">
                     <svg class="card__svg">
@@ -217,7 +247,14 @@
                 <button class="btn card__btn">Выбрать платформу</button>
             </div>
             <div class="card">
-                <img src="./img/card-img-4.jpg" alt="img 1" class="card__img">
+                <img src="./img/card-img-4_2x.jpg"
+                    srcset="./img/card-img-4.jpg 330w, 
+                            ./img/card-img-4_2x.jpg 660w"
+                    sizes="(max-width: 1170px) 660px,
+                            (max-width: 830px) 660px,
+                            (max-width: 460px) 330px" 
+                    alt="img 1" 
+                    class="card__img">
                 <h5 class="card__title">Nintendo</h5>
                 <div class="content card__location">
                     <svg class="card__svg">
@@ -246,7 +283,14 @@
                 <button class="btn card__btn">Выбрать платформу</button>
             </div>
             <div class="card">
-                <img src="./img/card-img-5.jpg" alt="img 1" class="card__img">
+                <img src="./img/card-img-5_2x.jpg"
+                    srcset="./img/card-img-5.jpg 330w, 
+                            ./img/card-img-5_2x.jpg 660w"
+                    sizes="(max-width: 1170px) 660px,
+                            (max-width: 830px) 660px,
+                            (max-width: 460px) 330px" 
+                    alt="img 1" 
+                    class="card__img">
                 <h5 class="card__title">Steam deck</h5>
                 <div class="content card__location">
                     <svg class="card__svg">
@@ -275,7 +319,14 @@
                 <button class="btn card__btn">Выбрать платформу</button>
             </div>
             <div class="card">
-                <img src="./img/card-img-6.jpg" alt="img 1" class="card__img">
+                <img src="./img/card-img-6_2x.jpg"
+                    srcset="./img/card-img-6.jpg 330w, 
+                            ./img/card-img-6_2x.jpg 660w"
+                    sizes="(max-width: 1170px) 660px,
+                            (max-width: 830px) 660px,
+                            (max-width: 460px) 330px" 
+                    alt="img 1" 
+                    class="card__img">
                 <h5 class="card__title">Mobile</h5>
                 <div class="content card__location">
                     <svg class="card__svg">
@@ -303,52 +354,52 @@
                 </div>
                 <button class="btn card__btn">Выбрать платформу</button>
             </div>
-        </div>
-        <div class="gallery">
+        </section>
+        <section class="gallery">
             <div class="gallery__item gallery__item-1">
-                <img src="./img/gallery-img-1.jpg" alt="gallery-img-1" class="gallery__img">
+                <img src="./img/gallery-img-1.png" alt="gallery-img-1" class="gallery__img">
             </div>
             <div class="gallery__item gallery__item-2">
-                <img src="./img/gallery-img-2.jpg" alt="gallery-img-2" class="gallery__img">
+                <img src="./img/gallery-img-2.png" alt="gallery-img-2" class="gallery__img">
             </div>
             <div class="gallery__item gallery__item-3">
-                <img src="./img/gallery-img-3.jpg" alt="gallery-img-3" class="gallery__img">
+                <img src="./img/gallery-img-3.png" alt="gallery-img-3" class="gallery__img">
             </div>
             <div class="gallery__item gallery__item-4">
-                <img src="./img/gallery-img-4.jpg" alt="gallery-img-4" class="gallery__img">
+                <img src="./img/gallery-img-4.png" alt="gallery-img-4" class="gallery__img">
             </div>
             <div class="gallery__item gallery__item-5">
-                <img src="./img/gallery-img-5.jpg" alt="gallery-img-5" class="gallery__img">
+                <img src="./img/gallery-img-5.png" alt="gallery-img-5" class="gallery__img">
             </div>
             <div class="gallery__item gallery__item-6">
-                <img src="./img/gallery-img-6.jpg" alt="gallery-img-6" class="gallery__img">
+                <img src="./img/gallery-img-6.png" alt="gallery-img-6" class="gallery__img">
             </div>
             <div class="gallery__item gallery__item-7">
-                <img src="./img/gallery-img-7.jpg" alt="gallery-img-7" class="gallery__img">
+                <img src="./img/gallery-img-7.png" alt="gallery-img-7" class="gallery__img">
             </div>
             <div class="gallery__item gallery__item-8">
-                <img src="./img/gallery-img-8.jpg" alt="gallery-img-8" class="gallery__img">
+                <img src="./img/gallery-img-8.png" alt="gallery-img-8" class="gallery__img">
             </div>
             <div class="gallery__item gallery__item-9">
-                <img src="./img/gallery-img-9.jpg" alt="gallery-img-9" class="gallery__img">
+                <img src="./img/gallery-img-9.png" alt="gallery-img-9" class="gallery__img">
             </div>
             <div class="gallery__item gallery__item-10">
-                <img src="./img/gallery-img-10.jpg" alt="gallery-img-10" class="gallery__img">
+                <img src="./img/gallery-img-10.png" alt="gallery-img-10" class="gallery__img">
             </div>
             <div class="gallery__item gallery__item-11">
-                <img src="./img/gallery-img-11.jpg" alt="gallery-img-11" class="gallery__img">
+                <img src="./img/gallery-img-11.png" alt="gallery-img-11" class="gallery__img">
             </div>
             <div class="gallery__item gallery__item-12">
-                <img src="./img/gallery-img-12.jpg" alt="gallery-img-12" class="gallery__img">
+                <img src="./img/gallery-img-12.png" alt="gallery-img-12" class="gallery__img">
             </div>
             <div class="gallery__item gallery__item-13">
-                <img src="./img/gallery-img-13.jpg" alt="gallery-img-13" class="gallery__img">
+                <img src="./img/gallery-img-13.png" alt="gallery-img-13" class="gallery__img">
             </div>
             <div class="gallery__item gallery__item-14">
-                <img src="./img/gallery-img-14.jpg" alt="gallery-img-14" class="gallery__img">
+                <img src="./img/gallery-img-14.png" alt="gallery-img-14" class="gallery__img">
             </div>
-        </div>
-        <div class="footer">
+        </section>
+        <footer class="footer">
             <a href="#header" class="footer__link logo__link">
                 <img src="./icons/logo.svg" alt="logo" class="footer__logo logo__img">
             </a>
@@ -371,7 +422,7 @@
                     </li>
                 </ul>
             </nav>
-        </div>
+        </footer>
     </div>
     <script src="./js/main.js"></script>
 </body>

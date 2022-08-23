@@ -7,9 +7,11 @@
         display: grid
         grid-template-columns: repeat(16, 1fr)
         grid-template-rows: repeat(16, 1fr)
-        background: url('../img/bunner-bg.jpg') center / cover no-repeat
+        background: url('../img/bunner-bg_1.5x.jpg') center / cover no-repeat
         @include respond(tab-port)
             grid-column: 1 / -1
+        @media ( min-resolution: 192dpi) and (min-width: 670px), (min-width: 1340px)
+            background: url('../img/bunner-bg_2x.jpg') center / cover no-repeat
         &__img-1
             width: 100%
             grid-column: 3 / 15

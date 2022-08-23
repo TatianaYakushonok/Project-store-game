@@ -1,11 +1,13 @@
 .header
-    background: $color-blue-dark url('../img/header-bg.jpg') center / cover no-repeat
+    background: $color-blue-dark url('../img/header-bg_1x.jpg') center / cover no-repeat
     grid-column: full-start / col-end 6
     padding: 5rem
     display: grid
     grid-template-rows: 1fr min-content minmax(10rem, min-content) 1fr
     @include respond(tab-port)
         grid-column: full-start / full-end
+    @media ( min-resolution: 192dpi) and (min-width: 670px), (min-width: 1340px)
+        background: $color-blue-dark url('../img/header-bg_2x.jpg') center / cover no-repeat
     &__logo-link
         justify-self: center
     &__btn
